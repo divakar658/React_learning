@@ -101,3 +101,32 @@
   margin: 4px 0;
   color: #555;
 }
+.filter-btn {
+  cursor: pointer;
+  margin-top: auto;
+  padding: 8px 14px;
+  margin-left: 10px;
+
+  background: #4a90e2;
+  /* nice blue */
+  color: white;
+  border: none;
+  border-radius: 6px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  transition: 0.2s ease;
+}
+
+/* Hover effect */
+.filter-btn:hover {
+  background: #357ABD;
+  transform: translateY(-2px);
+}
+
+/* Press (active) effect */
+.filter-btn:active {
+  background: #2c5f99;
+  transform: translateY(0px);
+}
