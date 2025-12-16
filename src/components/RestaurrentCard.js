@@ -10,7 +10,7 @@ const RestaurrentCard = (props) => {
       />
       <h3>{resData.info.name}</h3>
       <h4>{resData.info.avgRating}</h4>
-      {/* <h4>{resData.info.sla.deliveryTime}:Minutes</h4> */}
+      {<h4>{resData.info.sla.deliveryTime}:Minutes</h4>}
     </div>
   );
 };
