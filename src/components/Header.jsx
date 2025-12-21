@@ -1,7 +1,12 @@
-import { useState } from "react";
+import { useState ,useEffect} from "react";
 import { LOGO_URL } from "../utils/constants";
+import {Link} from "react-router-dom";
 const Header = () => {
   const [btn,setbtn]=useState("Login");
+  useEffect(()=>{
+    console.log("useeffect_rendered");
+  },[btn]);
+  // console.log("header rendered");
   const changestate=()=>
   {
     if(btn=="Login")
@@ -21,8 +26,10 @@ const Header = () => {
       <div className="nav-items">
         <ul>
           <li>Home</li>
-          <li>About-us</li>
-          <li>contact-us</li>
+          <li>
+            <Link to="/about">About-us</Link>
+            </li>
+          <li><Link to="/contact">contact-us</Link></li>
           <button className="login" onClick={changestate}>{btn}</button>
         </ul>
       </div>
